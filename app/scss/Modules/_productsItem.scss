@@ -37,5 +37,22 @@
             height: 44.6rem; // draft - only for develop
             width: 38.6rem; // draft - only for develop
         }
+
+        &__Price {
+            .Price {
+                &__New {
+                    color: $color-brand;
+
+                    @include font-size(25px);
+                }
+
+                &__Old {
+                    &::before {
+                        content: '';
+                        border: .1rem solid $color-gray4;
+                    }
+                }
+            }
+        }
     }
 }

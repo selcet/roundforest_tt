@@ -419,5 +419,15 @@ ul {
     .Products__Item.TopDeal {
       height: 44.6rem;
       width: 38.6rem; }
+    /* line 43, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item__Price .Price__New {
+      color: #ff6666;
+      font-size: 25px;
+      font-size: 2.5rem;
+      /* stylelint-disable-line declaration-block-no-duplicate-properties */ }
+    /* line 50, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item__Price .Price__Old::before {
+      content: '';
+      border: 0.1rem solid #878787; }
 
 /*# sourceMappingURL=maps/tt-styles.css.map */
