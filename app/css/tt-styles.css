@@ -244,8 +244,9 @@ ul {
     color: #878787;
     display: inline-block;
     padding: 1.7rem 1.7rem 0;
-    position: relative; }
-    /* line 18, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    position: relative;
+    width: 100%; }
+    /* line 19, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item.Off-72 {
       transition: all 0.3s ease; }
       /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
@@ -280,7 +281,7 @@ ul {
         /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
         .Products__Item.Off-72:hover::after {
           border-color: #ff6666; }
-    /* line 22, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 23, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item.Off-68 {
       transition: all 0.3s ease; }
       /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
@@ -315,7 +316,7 @@ ul {
         /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
         .Products__Item.Off-68:hover::after {
           border-color: #ff931d; }
-    /* line 26, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 27, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item.Off-66 {
       transition: all 0.3s ease; }
       /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
@@ -350,7 +351,7 @@ ul {
         /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
         .Products__Item.Off-66:hover::after {
           border-color: #ff931d; }
-    /* line 30, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 31, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item.Off-45 {
       transition: all 0.3s ease; }
       /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
@@ -385,7 +386,7 @@ ul {
         /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
         .Products__Item.Off-45:hover::after {
           border-color: #ffbe17; }
-    /* line 34, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 35, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item.Off-40 {
       transition: all 0.3s ease; }
       /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
@@ -420,25 +421,22 @@ ul {
         /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
         .Products__Item.Off-40:hover::after {
           border-color: #ffbe17; }
-    /* line 38, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
-    .Products__Item.TopDeal {
-      width: 100%; }
-    /* line 44, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 39, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item__Img {
       text-align: center; }
-    /* line 50, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 45, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item__Price .Price__New {
       color: #ff6666;
       font-size: 25px;
       font-size: 2.5rem;
       /* stylelint-disable-line declaration-block-no-duplicate-properties */ }
-    /* line 56, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 51, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item__Price .Price__Old {
       position: relative;
       font-size: 12.82px;
       font-size: 1.282rem;
       /* stylelint-disable-line declaration-block-no-duplicate-properties */ }
-      /* line 61, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+      /* line 56, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
       .Products__Item__Price .Price__Old::before {
         border: 0.1rem solid #878787;
         content: '';
@@ -447,29 +445,29 @@ ul {
         top: .5rem;
         width: 100%;
         transform: rotate(10deg); }
-    /* line 73, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 68, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item__Price .Shop {
       padding-top: 1rem;
       text-align: right;
       font-size: 13px;
       font-size: 1.3rem;
       /* stylelint-disable-line declaration-block-no-duplicate-properties */ }
-    /* line 81, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 76, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item__Description {
       border: .2rem dashed;
       border-color: #e6e6e6 transparent #e6e6e6 transparent;
       padding: 1.7rem 0; }
-    /* line 87, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 82, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item__AdditionalInfo {
       text-align: center; }
-      /* line 91, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+      /* line 86, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
       .Products__Item__AdditionalInfo .Info__Item {
         border-right: 0.1rem solid #e6e6e6;
         margin: .8rem 0; }
-        /* line 95, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+        /* line 90, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
         .Products__Item__AdditionalInfo .Info__Item.LastItem {
           border-right: none; }
-    /* line 103, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    /* line 98, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
     .Products__Item:hover .Products__Item__Description {
       text-decoration: underline; }
 

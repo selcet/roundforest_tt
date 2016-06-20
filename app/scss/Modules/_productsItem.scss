@@ -14,6 +14,7 @@
         display: inline-block;
         padding: 1.7rem 1.7rem 0;
         position: relative;
+        width: 100%;
 
         &.Off-72 {
             @include rounded-sale($sale-count: '72% off');
@@ -33,12 +34,6 @@
 
         &.Off-40 {
             @include rounded-sale($prime-color: $color-accent, $sale-count: '40% off');
-        }
-
-        &.TopDeal {
-            //height: 44.6rem; // draft - only for develop
-            //width: 38.6rem; // draft - only for develop
-            width: 100%;
         }
 
         &__Img {
