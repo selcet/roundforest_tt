@@ -10,8 +10,11 @@
 
     &__Item {
         border: .1rem solid $color-brand;
+        color: $color-gray4;
         display: inline-block;
+        padding: 1.7rem 1.7rem 0;
         position: relative;
+        width: 100%;
 
         &.Off-72 {
             @include rounded-sale($sale-count: '72% off');
@@ -33,9 +36,68 @@
             @include rounded-sale($prime-color: $color-accent, $sale-count: '40% off');
         }
 
-        &.TopDeal {
-            height: 44.6rem; // draft - only for develop
-            width: 38.6rem; // draft - only for develop
+        &__Img {
+            text-align: center;
+        }
+
+        &__Price {
+            .Price {
+                &__New {
+                    color: $color-brand;
+
+                    @include font-size(25px);
+                }
+
+                &__Old {
+                    position: relative;
+
+                    @include font-size(12.82px);
+
+                    &::before {
+                        border: .1rem solid $color-gray4;
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        top: .5rem;
+                        width: 100%;
+                        transform: rotate(10deg);
+                    }
+                }
+            }
+
+            .Shop {
+                padding-top: 1rem;
+                text-align: right;
+
+                @include font-size(13px);
+            }
+        }
+
+        &__Description {
+            border: .2rem dashed;
+            border-color: $color-gray2 transparent $color-gray2 transparent;
+            padding: 1.7rem 0;
+        }
+
+        &__AdditionalInfo {
+            text-align: center;
+
+            .Info {
+                &__Item {
+                    border-right: .1rem solid $color-gray2;
+                    margin: .8rem 0;
+
+                    &.LastItem {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .Products__Item__Description {
+                text-decoration: underline;
+            }
         }
     }
 }
