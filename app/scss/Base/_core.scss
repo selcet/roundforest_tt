@@ -5,13 +5,17 @@
 // ------------------------------------------
 
 .Container {
-  margin: 0 auto;
-  width: 120rem;
+    margin: 0 auto;
+    width: 120rem;
 
-  &--Flex {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-  }
+    &--Flex {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        & > .row {
+            width: 100%;
+        }
+    }
 }
