@@ -90,3 +90,51 @@
         @content;
     }
 }
+
+/// Mixin to create rounded sale block in corner of parent el
+///
+/// @param {Number} $width - Width for rounded sale block, defaults to '5.7rem'
+/// @param {Number} $height - Height for rounded sale block, defaults to '5.7rem'
+/// @param {Number | String} $prime-color - Value for background and border-color, defaults to '$color-brand'
+/// @param {String} $sale-count [72% off] - Value for text inside rounded sale block, defaults to '72% off'
+///
+@mixin rounded-sale($width: 5.7rem, $height: 5.7rem, $prime-color: $color-brand, $sale-count: '72% off') {
+    @include transition($time: .3s);
+
+    &::before {
+        background: $prime-color;
+        border-radius: 50%;
+        color: $color-white;
+        content: '#{$sale-count}';
+        display: inline-block;
+        height: $height;
+        line-height: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        position: absolute;
+        top: .8rem;
+        left: 1.1rem;
+        text-align: center;
+        width: $width;
+    }
+
+    &::after {
+        border: .3rem solid transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        @include transition($time: .3s);
+    }
+
+    &:hover {
+        box-shadow: 0 0 1rem 0.3rem rgba($color-gray5, .2);
+        cursor: pointer;
+
+        &::after {
+            border-color: $prime-color;
+        }
+    }
+}

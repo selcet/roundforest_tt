@@ -1,4 +1,5 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 /* line 5, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
 html {
   font-size: 10px;
@@ -230,5 +231,193 @@ ul {
     display: flex;
     justify-content: center;
     height: 100%; }
+
+/* line 8, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+.Products {
+  font-family: "Roboto", sans-serif; }
+  /* line 11, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+  .Products__Item {
+    border: 0.1rem solid #ff6666;
+    display: inline-block;
+    position: relative; }
+    /* line 16, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item.Off-72 {
+      transition: all 0.3s ease; }
+      /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-72::before {
+        background: #ff6666;
+        border-radius: 50%;
+        color: #fff;
+        content: "72% off";
+        display: inline-block;
+        height: 5.7rem;
+        line-height: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        position: absolute;
+        top: .8rem;
+        left: 1.1rem;
+        text-align: center;
+        width: 5.7rem; }
+      /* line 120, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-72::after {
+        border: .3rem solid transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.3s ease; }
+      /* line 132, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-72:hover {
+        box-shadow: 0 0 1rem 0.3rem rgba(77, 77, 77, 0.2);
+        cursor: pointer; }
+        /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+        .Products__Item.Off-72:hover::after {
+          border-color: #ff6666; }
+    /* line 20, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item.Off-68 {
+      transition: all 0.3s ease; }
+      /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-68::before {
+        background: #ff931d;
+        border-radius: 50%;
+        color: #fff;
+        content: "68% off";
+        display: inline-block;
+        height: 5.7rem;
+        line-height: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        position: absolute;
+        top: .8rem;
+        left: 1.1rem;
+        text-align: center;
+        width: 5.7rem; }
+      /* line 120, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-68::after {
+        border: .3rem solid transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.3s ease; }
+      /* line 132, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-68:hover {
+        box-shadow: 0 0 1rem 0.3rem rgba(77, 77, 77, 0.2);
+        cursor: pointer; }
+        /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+        .Products__Item.Off-68:hover::after {
+          border-color: #ff931d; }
+    /* line 24, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item.Off-66 {
+      transition: all 0.3s ease; }
+      /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-66::before {
+        background: #ff931d;
+        border-radius: 50%;
+        color: #fff;
+        content: "66% off";
+        display: inline-block;
+        height: 5.7rem;
+        line-height: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        position: absolute;
+        top: .8rem;
+        left: 1.1rem;
+        text-align: center;
+        width: 5.7rem; }
+      /* line 120, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-66::after {
+        border: .3rem solid transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.3s ease; }
+      /* line 132, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-66:hover {
+        box-shadow: 0 0 1rem 0.3rem rgba(77, 77, 77, 0.2);
+        cursor: pointer; }
+        /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+        .Products__Item.Off-66:hover::after {
+          border-color: #ff931d; }
+    /* line 28, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item.Off-45 {
+      transition: all 0.3s ease; }
+      /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-45::before {
+        background: #ffbe17;
+        border-radius: 50%;
+        color: #fff;
+        content: "45% off";
+        display: inline-block;
+        height: 5.7rem;
+        line-height: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        position: absolute;
+        top: .8rem;
+        left: 1.1rem;
+        text-align: center;
+        width: 5.7rem; }
+      /* line 120, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-45::after {
+        border: .3rem solid transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.3s ease; }
+      /* line 132, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-45:hover {
+        box-shadow: 0 0 1rem 0.3rem rgba(77, 77, 77, 0.2);
+        cursor: pointer; }
+        /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+        .Products__Item.Off-45:hover::after {
+          border-color: #ffbe17; }
+    /* line 32, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item.Off-40 {
+      transition: all 0.3s ease; }
+      /* line 104, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-40::before {
+        background: #ffbe17;
+        border-radius: 50%;
+        color: #fff;
+        content: "40% off";
+        display: inline-block;
+        height: 5.7rem;
+        line-height: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        position: absolute;
+        top: .8rem;
+        left: 1.1rem;
+        text-align: center;
+        width: 5.7rem; }
+      /* line 120, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-40::after {
+        border: .3rem solid transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.3s ease; }
+      /* line 132, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+      .Products__Item.Off-40:hover {
+        box-shadow: 0 0 1rem 0.3rem rgba(77, 77, 77, 0.2);
+        cursor: pointer; }
+        /* line 136, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_mixins.scss */
+        .Products__Item.Off-40:hover::after {
+          border-color: #ffbe17; }
+    /* line 36, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Modules/_productsItem.scss */
+    .Products__Item.TopDeal {
+      height: 44.6rem;
+      width: 38.6rem; }
 
 /*# sourceMappingURL=maps/tt-styles.css.map */

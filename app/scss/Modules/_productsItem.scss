@@ -1,0 +1,41 @@
+// Styles for Product Items
+// --------------------------------------------------
+// Imports
+// --------------------------------------------------
+@import "../Base/libs";
+// --------------------------------------------------
+
+.Products {
+    font-family: $fontRoboto;
+
+    &__Item {
+        border: .1rem solid $color-brand;
+        display: inline-block;
+        position: relative;
+
+        &.Off-72 {
+            @include rounded-sale($sale-count: '72% off');
+        }
+
+        &.Off-68 {
+            @include rounded-sale($prime-color: $color-lemon, $sale-count: '68% off');
+        }
+
+        &.Off-66 {
+            @include rounded-sale($prime-color: $color-lemon, $sale-count: '66% off');
+        }
+
+        &.Off-45 {
+            @include rounded-sale($prime-color: $color-accent, $sale-count: '45% off');
+        }
+
+        &.Off-40 {
+            @include rounded-sale($prime-color: $color-accent, $sale-count: '40% off');
+        }
+
+        &.TopDeal {
+            height: 44.6rem; // draft - only for develop
+            width: 38.6rem; // draft - only for develop
+        }
+    }
+}
