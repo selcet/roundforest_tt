@@ -12,7 +12,7 @@ All you need - run file
 - `gulpWatch.bat` *for* **WindowsOS**
 
 ## View worked version
-[http://selcet.github.io](https://github.com/selcet/roundforest_tt)
+[http://selcet.github.io](https://selcet.github.io/roundforest_tt/app/index.html)
 
 ## Author
 - Email: mr.selcet@gmail.com
