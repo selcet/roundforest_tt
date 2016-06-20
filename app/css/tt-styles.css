@@ -1,2 +1,234 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+/* line 5, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+html {
+  font-size: 10px;
+  line-height: 1.4; }
+
+/* line 10, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+html {
+  font-size: 10px; }
+
+/* line 14, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 28, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 33, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 42, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 57, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 70, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 80, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+textarea {
+  resize: vertical; }
+
+/* line 84, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 94, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+ * Hide visually and from screen readers
+ */
+/* line 109, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 118, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 135, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 149, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 165, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 171, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+.clearfix:after {
+  clear: both; }
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+
+@media print {
+  /* line 199, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  /* line 211, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 216, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  /* line 220, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  /* line 229, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  /* line 234, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  /* line 245, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  thead {
+    display: table-header-group; }
+  /* line 249, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+  /* line 254, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  img {
+    max-width: 100% !important; }
+  /* line 258, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  /* line 265, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/base/_reset.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/* line 7, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_core.scss */
+.Container {
+  margin: 0 auto;
+  width: 120rem; }
+  /* line 11, /Volumes/Media/Work/Test-Tasks/roundforest.com/roundforest_tt/app/scss/Base/_core.scss */
+  .Container--Flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%; }
 
 /*# sourceMappingURL=maps/tt-styles.css.map */

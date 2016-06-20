@@ -1,0 +1,92 @@
+// Fonts
+// --------------------------------------------------
+@mixin customFont($fontName, $fileName, $path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $fontName;
+        src: url($path + $fileName + '.eot?v=' + $compileVersion);
+        src: url($path + $fileName + '.eot?v=' + $compileVersion + '#iefix') format('embedded-opentype'),
+        url($path + $fileName + '.woff?v=' + $compileVersion) format('woff'),
+        url($path + $fileName + '.ttf?v=' + $compileVersion) format('truetype'),
+        url($path + $fileName + '.svg#' + $fileName + '?v=' + $compileVersion) format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+/// Mixin for applying transition action
+///
+/// @param {String} $transition [all] - property to transition, defaults to all
+/// @param {Number} $time [.4s] - Amount of time for the transition to complete, defaults to .4s
+/// @param {String} $animation [ease] - easing type for transition to use, defaults to ease
+///
+/// @example scss - Usage
+///     .Default {
+///         @include transition();
+///     }
+///
+///     .Element {
+///         @include transition(height, 1s, ease-in-out);
+///     }
+///
+/// @example css - CSS output
+///     .Default {
+///         transition: all .4s, ease;
+///     }
+///     .Element {
+///         transition: height 1s ease-in-out;
+///     }
+@mixin transition($transition: all, $time: .4s, $animation: ease) {
+    transition: $transition $time $animation;
+}
+
+/// Function to convert px size to rem
+///
+/// @param {Number} $size - Size in pixels to convert to rem
+@function calculate-rem($size) {
+    $rem-size: $size / 10px;
+
+    @return #{$rem-size}rem;
+}
+
+/// Mixin to output rem font-size with px fallback
+///
+/// @param {Number} $size - Element’s `font-size` in pixels
+///
+/// @example scss - Usage
+///     h1 {
+///         @include font-size(32px);
+///     }
+///
+/// @example css - CSS output
+///     h1 {
+///         font-size: 32px;
+///         font-size: 2rem;
+///     }
+// scss-lint:disable VariableForProperty, DuplicateProperty
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculate-rem($size); /* stylelint-disable-line declaration-block-no-duplicate-properties */
+}
+
+// Media queries
+// --------------------------------------------------
+
+@mixin screen($minWidth, $maxWidth) {
+    // use plus '1' for don't overlap
+    @media screen and (min-width: $minWidth + 1) and (max-width: $maxWidth) {
+        @content;
+    }
+}
+
+@mixin maxScreen($maxWidth) {
+    @media screen and (max-width: $maxWidth) {
+        @content;
+    }
+}
+
+@mixin minScreen($minWidth) {
+    // use plus '1' for don't overlap
+    @media screen and (min-width: $minWidth + 1) {
+        @content;
+    }
+}

@@ -1,0 +1,37 @@
+// border radius
+// ------------------------------------------
+$border-radius-xSmall:  .3rem;
+$border-radius-small:   .4rem;
+$border-radius-base:    .6rem;
+// ------------------------------------------
+
+// Font Families
+// ------------------------------------------
+$fontIcons: "Icons";
+$fontRoboto: "Roboto", sans-serif;
+// ------------------------------------------
+
+// Compile version for cache, random number
+// ------------------------------------------
+$compileVersion: random(900000) + random(99999);
+// ------------------------------------------
+
+/// Breakpoints
+
+/// Phone breakpoint
+/// @type Number
+/// @group Breakpoints
+$screen_S: 768px;
+$small: $screen_S;
+
+/// Large phone breakpoint
+/// @type Number
+/// @group Breakpoints
+$screen_M: 992px;
+$middle: $screen_M;
+
+/// Tablet breakpoint
+/// @type Number
+/// @group Breakpoints
+$screen_L: 1200px;
+$large: $screen_L;

@@ -1,0 +1,17 @@
+// Imports
+// ------------------------------------------
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+@import "base/reset";
+// ------------------------------------------
+
+.Container {
+  margin: 0 auto;
+  width: 120rem;
+
+  &--Flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+}
